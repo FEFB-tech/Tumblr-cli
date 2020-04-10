@@ -1,7 +1,7 @@
 #!/bin/bash
 
 clear
-echo "Tumblr viewer, organizer and search tool for the terminal made in bash.  Only works on compatible *nix systems and requires the mpv media player
+echo "Tumblr viewer, organizer and search tool for the terminal made in bash.  Only works on compatible *nix systems and requires lynx and the mpv media player
 
 1) Start by typing ./tumblr
 2) Use ./add followed by the tumblr page url example; ./add vinne-art.tumblr.com
