@@ -9,6 +9,4 @@
 Tumblr is a place to express yourself, discover yourself, and bond over the stuff you love. It's where your interests connect you with your people.
 Use ./add ./search ./play and ./download . Type ./help for further information
 
-
-# Tumblr-cli
-# Tumblr-cli
+-
