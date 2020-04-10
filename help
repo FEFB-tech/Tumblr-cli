@@ -1,0 +1,15 @@
+#!/bin/bash
+
+clear
+echo "Tumblr viewer, organizer and search tool for the terminal made in bash.  Only works on compatible *nix systems and requires the mpv media player
+
+1) Start by typing ./tumblr
+2) Use ./add followed by the tumblr page url example; ./add vinne-art.tumblr.com
+3) Then access the content by executing the file with the given url. example; ./vinne-art.tumblr.com
+It will create a m3u file that can be automatically reproduced on the mpv media player. 
+4) The playlist can be later recalled without downloading the images again by simply typing ./play . 
+5) If you want to download the content of the last playlist created type ./download
+6) You can search the tumblr directory by typing ./search followed by the searching terms, example; ./search Star+Wars
+-
+"
+ls -1 ./*.tumblr.com

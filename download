@@ -1,0 +1,5 @@
+#!/bin/bash
+
+wget --input-file=./tumblr.m3u
+clear
+./tumblr

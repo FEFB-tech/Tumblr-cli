@@ -1,0 +1,5 @@
+#!/bin/bash
+
+mpv --ontop --no-border --ytdl-format='[height<=?1360]' --geometry 450x225-0-20 './tumblr.m3u'
+clear
+./tumblr

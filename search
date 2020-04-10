@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "Searching ..."
+lynx -image_links -dump "https://www.tumblr.com/search/'$1'" | grep '\. https\?://.*\.\(gifv\|jpg\|png\|mp4\)$' | sed -E 's/^ ?+[0-9]+\. //; 1,3d' | sed '/^.\{134\}./d' | sed -r '/^.{,90}$/d' > tumblr.m3u
+mpv --ontop --no-border --ytdl-format='[height<=?1360]' --geometry 450x225-0-20 'tumblr.m3u'
+clear
+./tumblr

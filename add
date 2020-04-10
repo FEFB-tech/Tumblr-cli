@@ -1,0 +1,12 @@
+#!/bin/bash
+
+printf "'$1' %.0s" {1..10} | perl -pe 's/\bcom\b/$& . ++$count/ge' | sed 's/\.com/\.com\/page\//g' >> $1
+echo "| grep '\. https\?://.*\.\(gifv\|jpg\|png\|mp4\)$' | sed -E 's/^ ?+[0-9]+\. //; 1,3d' | sed '/^.\{134\}./d' | sed -r '/^.{,90}$/d' > tumblr.m3u
+mpv --ontop --no-border --ytdl-format='[height<=?1360]' --geometry 450x225-0-20 'tumblr.m3u'
+clear
+./tumblr" >> $1
+echo "$(echo -n 'echo "Please wait"
+lynx -image_links -dump '; cat $1)" > $1
+chmod +x $1
+clear
+./tumblr

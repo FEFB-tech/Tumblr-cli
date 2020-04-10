@@ -1,0 +1,5 @@
+#!/bin/bash
+
+clear
+cat ./README.md
+ls -1 ./*.tumblr.com
